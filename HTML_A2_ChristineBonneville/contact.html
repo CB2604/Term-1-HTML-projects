@@ -1,0 +1,124 @@
+<!--This is Graded Assignment 2, completed on March 29th, 2025-->
+<!--Christine Bonneville-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="style.css">
+    <title>Contact Page | CYB </title>
+    <link rel="icon" type="image/x-icon" href="the_instant_assistant_logo.JPG">
+
+</head>
+<body>
+<div class="bodycontainer">
+    <div>
+        <header>
+            <!--Christine Bonneville-->
+            <img src="the_instant_assistant_logo.JPG" alt="The Instant Assistant company logo" width = 250px height = 150px> 
+            <!--I created my logo when I first openened my business back in 2006.-->
+            <h1>Dental Assisting<br>Temp Agency</h1>
+        </header>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="contact.html">Refresh Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="fieldsetcontainer">
+            <form>      
+                <fieldset class="insideform">
+                    <legend>FULL NAME</legend>
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input style="background-color: #fef9ff;border-color:midnightblue; color:midnightblue" type="text" name="firstName" id="firstName" placeholder="Enter First Name">
+                    </div>
+                    
+                    <div>
+                        <label for="lastName">&nbsp;Last Name: </label>
+                        <input style="background-color:#fef9ff;border-color: 2px midnightblue; color:midnightblue" type="text" name="lastName" id="lastName" placeholder="Enter Last Name">
+                    </div>
+                </fieldset>
+            <br>                
+                <fieldset class="insideform" >
+                    <legend>CONTACT INFORMATION</legend>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input style="background-color: #fef9ff;border-color: 2px midnightblue; color:midnightblue" type="email" name="email" placeholder="Enter email">
+                    </div>
+                                    
+                    <div>
+                        <label for="phoneNumber">&nbsp;Phone number: </label>
+                        <input style="background-color: #fef9ff;border-color: 2px midnightblue; color:midnightblue" type="tel" name="phoneNumber" placeholder="Enter phone number">
+                    </div>
+                </fieldset>
+            <br>      
+                <fieldset class="insideform">
+                    <legend>COMMENTS OR QUESTIONS</legend>
+                    <div>
+                        <textarea style="background-color: #fef9ff;border-color:2px midnightblue; color:midnightblue" name="message" cols="30" rows="5" placeholder="Enter comments or questions"></textarea>
+                    </div>
+                </fieldset>
+            <br>                   
+                <fieldset class="insideform">
+                    <legend>IS YOUR INQUIRY URGENT?</legend>
+                    <div>
+                      <input type="radio" name="choice" id="yes" value="yes">
+                      <label for="YES">YES</label>
+                    </div>
+          
+                    <div>
+                      <input type="radio" name="choice" id="no" value="no">
+                      <label for="no">NO</label>
+                    </div>
+                </fieldset>   
+            <br>
+                <fieldset class="insideform" >
+                    <legend>HOW WOULD YOU LIKE TO BE CONTACTED? Choose all that apply.</legend>
+                    <div>
+                        <label for="postal">Snail Mail</label>
+                        <input type="checkbox" name="postal" value="postal">
+                        <label for="email">Email</label>
+                        <input type="checkbox" name="email" value="email">
+                        <label for="telephone">Telephone</label>
+                        <input type="checkbox" name="telephone" value="telephone">
+                    </div>
+                </fieldset>
+            <br>
+                <fieldset class="insideform">
+                    <legend>ATTACH ANY DOCUMENTS</legend>
+                    <button style="background-color: plum;border-color: 2px midnightblue; color:midnightblue; border-radius: 5px">
+                    <input type="file" name="userFiles" multiple></button>  
+                </fieldset>
+            <br>
+                <fieldset class="insideform">
+                    <legend>RATE MY WEBSITE</legend>
+                    <div>1</div>
+                    <button style="background-color: plum;border-color: 2px midnightblue; color:midnightblue; border-radius: 5px">
+                    
+                    <input type="range" name="likertRange" min="1" max="10" step="1" value="5">
+                </button>
+                <div>10</div>
+                </fieldset>
+            
+                <br>
+                <fieldset class="insideform">
+                    <legend>SUBMIT FORM</legend>
+                    <div>Note: By submitting, you agree to all term and conditions.&nbsp;</div>
+                    <button style="background-color: plum;border-color:2px midnightblue; color:midnightblue; border-radius: 5px" name="submit">Submit</button>
+                </fieldset>
+            </form> 
+        </div>
+    </main>
+
+    <footer>&copy; 2025 Christine Bonneville</footer>
+</div>
+</body>
+</html>

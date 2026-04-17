@@ -1,0 +1,247 @@
+/*This is Graded Assignment 2, completed on March 29th, 2025*/
+/*Christine Bonneville */
+.bodycontainer {
+    width: 94%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+
+.listcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.clipped-box {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.figcontainer {
+    display: flex;
+    direction: column;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+.figimg {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
+.trianglecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.fieldsetcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.insideform {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-evenly;
+    border: 5px solid darkslateblue;
+    border-radius: 5px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+legend {
+    background-color: #e7e7ff;
+    color: midnightblue;
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: Garamond;
+    color: bisque;
+    background-color: purple;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    width: 82%;
+    margin: 0 auto;
+    background: url('dental_assistant.jpg') no-repeat center center/cover;
+    text-align: left;
+    color:purple;
+    text-shadow: 1px 1px bisque;
+    padding: 100px 100px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+    
+.hero-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); 
+    z-index: 1;
+    border-radius: 5px;
+}
+
+    .mobiletext {
+        display: none;
+    }
+
+p, h2, h6 {
+    text-align: center;
+    font-family: Garamond;
+    font-size: 25px;
+}
+
+h2 {
+    text-decoration: double underline;
+}
+
+dl, ul, ol, li {
+    font-family: Garamond;
+    font-size: 25px;
+}
+
+nav {
+    background-color: plum;
+    font-family: Garamond;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Garamond;
+    margin-left: 50px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    float: right;
+    background-color: plum;
+    font-family: Garamond;
+    font-size: 16px;
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    width: 500px;
+    height: 425px;
+    border-radius: 5px;
+}
+
+section ul {
+    margin-left: 10px;
+}
+
+    footer {
+    position: static;
+    font-family: Garamond;
+    color: bisque;
+    background-color: purple;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*media queries*/
+@media screen and (max-width: 400px) { 
+    .bodycontainer, .listcontainer, .clipped-box, .fieldsetcontainer,.figcontainer, .figimg, .trianglecontainer, .insideform, legend, header, section, p, h2, h6, dl, ul, ol, li, nav, nav a, nav a:hover, footer {
+        width: 94%;
+        padding: 2%;
+        font-size: 16px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .hero-image {
+        width: 94%;
+        height: 50%;
+        padding: 2%;
+        background: url('toothy_friends.jpg') no-repeat center center/cover;
+        color: whitesmoke;
+        font-size: 15px;
+        text-shadow: 1px 1px purple;
+    }
+    
+    .fieldsetcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .insideform {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+       display: none; 
+    }
+
+    .homeimgtwo {
+        display: none;
+    }
+
+    .photo {
+        display: none;
+    }
+
+}
